@@ -1,5 +1,5 @@
 package prob01;
-
+ 
 public class Printer{
 	public void println( int val ) {
 		System.out.println( val );
