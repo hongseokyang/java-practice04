@@ -3,18 +3,13 @@ package prob05;
 public class MyBase extends Base {
 	@Override
 	public void service(String state) {
-		if(!state.equals("오후")) super.service(state);
-		else afternoon();
-		
-		/*
-		  if( state.equals( "낮" ) ) {
-			day();
-		} else if(state.equals("night")){
-			night();
-		} else {
+		if( "오후".equals( state ) ) {
 			afternoon();
+			return;
 		}
-		 */
+		
+		super.service(state);
+		
 	}
 	
 	@Override
